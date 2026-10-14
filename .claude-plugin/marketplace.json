@@ -1,0 +1,15 @@
+{
+  "name": "thediscordlist",
+  "description": "The official TheDiscordList plugin: find Discord servers, bots, emojis and stickers.",
+  "owner": {
+    "name": "TheDiscordList",
+    "url": "https://thediscordlist.com"
+  },
+  "plugins": [
+    {
+      "name": "thediscordlist",
+      "source": "./",
+      "description": "Find Discord servers, bots, emojis and stickers on TheDiscordList."
+    }
+  ]
+}

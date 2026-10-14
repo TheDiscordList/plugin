@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "thediscordlist": {
+      "type": "http",
+      "url": "https://thediscordlist.com/mcp"
+    }
+  }
+}

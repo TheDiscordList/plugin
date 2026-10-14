@@ -1,0 +1,14 @@
+{
+  "name": "thediscordlist",
+  "displayName": "TheDiscordList",
+  "version": "1.0.0",
+  "description": "Find Discord servers to join, bots to add, and emojis and stickers for your own server, from the TheDiscordList directory.",
+  "author": {
+    "name": "TheDiscordList",
+    "url": "https://thediscordlist.com"
+  },
+  "homepage": "https://thediscordlist.com",
+  "repository": "https://github.com/TheDiscordList/plugin",
+  "license": "MIT",
+  "keywords": ["discord", "servers", "bots", "emojis", "stickers", "community"]
+}
