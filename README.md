@@ -41,7 +41,7 @@ Every tool is read-only except `add-to-server`, which changes your own Discord s
 
 **Claude, ChatGPT and other MCP clients**: add `https://thediscordlist.com/mcp` as a custom connector.
 
-The first call asks you to sign in with Discord and approve the connection. You can revoke it at any time.
+Searching needs no account. `my-listings` and `add-to-server` work on your own servers, so the first time you use one you're asked to sign in with Discord and approve the connection. You can revoke it at any time.
 
 ## Privacy and support
 
