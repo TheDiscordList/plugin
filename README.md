@@ -24,8 +24,8 @@ Ask things like:
 | `search-listings` | Search public servers and bots by meaning and keywords, with category and tag filters |
 | `get-listing` | One server or bot in full, with similar listings |
 | `search-media` | Search emojis and stickers by name or category tag |
-| `browse-categories` | The categories and tags to filter by |
-| `my-listings` | Your own servers and bots, and which can take an emoji |
+| `browse-categories` | The categories to filter servers and bots by, and the tags to filter emojis and stickers by |
+| `my-listings` | Your own servers and bots, and which servers can take an emoji or sticker |
 | `add-to-server` | Upload an emoji or sticker into one of your servers |
 
 Every tool is read-only except `add-to-server`, which changes your own Discord server and only when you ask it to.
@@ -41,7 +41,7 @@ Every tool is read-only except `add-to-server`, which changes your own Discord s
 
 **Claude, ChatGPT and other MCP clients**: add `https://thediscordlist.com/mcp` as a custom connector.
 
-Searching needs no account. `my-listings` and `add-to-server` work on your own servers, so the first time you use one you're asked to sign in with Discord and approve the connection. You can revoke it at any time.
+Searching needs no account. `my-listings` and `add-to-server` work on your own servers, so the first time you use one you're asked to sign in with Discord and approve the connection. To disconnect, remove the connector from your assistant.
 
 ## Privacy and support
 

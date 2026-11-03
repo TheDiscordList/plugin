@@ -16,12 +16,16 @@ memory: listings change every day.
 2. Set `type` to `bot` when they want something to add to their server rather than a
    community to join.
 3. When the need is clearly a category ("gaming", "moderation"), call `browse-categories`
-   once and pass the matching `category` slug. A query with no matches is often a
-   category that is too narrow: drop it and search again.
-4. Present a few results, not all of them: the name, one line on why it fits, the member
+   once with `for: server` (or `bot`) and pass the matching `category` slug. A query with
+   no matches is often a category that is too narrow: drop it and search again.
+4. Pass a tag seen on results ("minecraft", "valorant") as `tag`. `sort` defaults to
+   `relevance` with a query and `members` without one; set it to `members` for "the
+   biggest" (for a bot that means the most servers), or to `online` for the servers with
+   the most people online.
+5. Present a few results, not all of them: the name, one line on why it fits, the member
    or server count, and the `join_url`. Use `join_url` to join or add, never an invite
    remembered from elsewhere; it rotates and is how the join is counted.
-5. For a closer look at one result, `get-listing` returns its description, a bot's
+6. For a closer look at one result, `get-listing` returns its description, a bot's
    commands, and similar listings.
 
 ## Emojis and stickers
@@ -29,9 +33,12 @@ memory: listings change every day.
 1. Call `search-media` with a short, literal word for what the emoji shows ("cat",
    "clown", "pepe", "heart"). Emoji names are literal, so an adjective like "goofy" finds
    little on its own.
-2. For a mood or a theme, call `browse-categories` with `for: emoji` and use a category
-   tag (`meme`, `animals`, `reactions`, `cute`) as `tag`, alone or with a query.
-3. Results come with an image, a `page_url` and a `download_url`.
+2. Set `type` to `sticker` when they want stickers: without it the search is for emojis.
+3. For a mood or a theme, call `browse-categories` with `for: emoji` (or `sticker`) and use
+   a category tag (`meme`, `animals`, `reactions`, `cute`) as `tag`, alone or with a query.
+4. Set `animated` to `true` for only animated ones. `sort` is `popular` by default (used in
+   the most servers); `newest` and `downloads` are the others.
+5. Results come with an image, a `page_url` and a `download_url`.
 
 ## Adding an emoji or sticker to the person's server
 
