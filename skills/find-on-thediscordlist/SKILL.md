@@ -18,10 +18,14 @@ memory: listings change every day.
 3. When the need is clearly a category ("gaming", "moderation"), call `browse-categories`
    once with `for: server` (or `bot`) and pass the matching `category` slug. A query with
    no matches is often a category that is too narrow: drop it and search again.
-4. Present a few results, not all of them: the name, one line on why it fits, the member
+4. Pass a tag seen on results ("minecraft", "valorant") as `tag`. `sort` defaults to
+   `relevance` with a query and `members` without one; set it to `members` for "the
+   biggest" (for a bot that means the most servers), or to `online` for the servers with
+   the most people online.
+5. Present a few results, not all of them: the name, one line on why it fits, the member
    or server count, and the `join_url`. Use `join_url` to join or add, never an invite
    remembered from elsewhere; it rotates and is how the join is counted.
-5. For a closer look at one result, `get-listing` returns its description, a bot's
+6. For a closer look at one result, `get-listing` returns its description, a bot's
    commands, and similar listings.
 
 ## Emojis and stickers
